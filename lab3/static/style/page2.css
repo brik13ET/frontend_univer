@@ -1,0 +1,101 @@
+.block, .block-2, .block-3, .block-4-1, .block-4-2, .block-4-3
+{
+    width: 200px;
+    height: 200px;
+    background-color: cornflowerblue;
+}
+
+.container, .container-2, .container-3, .container-4
+{
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    background-color: violet;
+}
+.container > *
+{
+    display: block;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.container-2
+{
+    display: flex;
+    align-items: center;
+    height: calc(200px + 4em);
+}
+
+.block-2
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-3
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.block-3
+{
+    border: 0.2em dashed;
+    display: grid;
+    place-items: center;
+}
+
+.block-3 > span
+{
+    font: 2em Sans-Serif,bolder;
+    color: white;
+}
+
+.container-4
+{
+    border-width: 2px;
+    border-style: solid;
+    background-color: white;
+}
+
+.block-4-1, .block-4-2, .block-4-3
+{
+    /* left: 0;
+    top: 0 ; */
+    border-width: 4px;
+    border-style: solid;
+    background-color: transparent;
+}
+
+.block-4-1
+{
+    position: relative;
+    top: 100px;
+    left: 100px;
+    border-color: red;
+}
+.block-4-2
+{
+    position: relative;
+    top: 16px;
+    left: 233px;
+    border-color: blue;
+}
+.block-4-3
+{
+    position: relative;
+    top: calc(16px - 83px);
+    left: calc(233px + 133px);
+    border-color: green;
+}
+
+.cat
+{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
