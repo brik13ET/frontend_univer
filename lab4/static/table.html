@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица</title>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/table.css">
+</head>
+<body>
+	<div id="content_parent">
+		
+		<div id="header">
+			<a href="index.html">Main</a>
+			<a href="page2.html">Page2</a>
+			<a href="table.html">Таблица</a>
+		</div>
+		<div id="content">
+            <table id="stud_table">
+                <caption>Таблица студентов</caption>
+                <th>Id</th>
+                <th>ФИО студента</th>
+                <th>Номер зачётной книжки</th>
+                <th>Номер группы</th>
+                <th>Пол</th>
+                <th>Возраст</th>
+                <th>Форма поступления</th>
+                <th>Название направления</th>
+                <th>столбец 2</th>
+                <tr>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Agnes Dana Sherman</td>
+                    <td>21118</td>
+                    <td>6201</td>
+                    <td>F</td>
+                    <td>21</td>
+                    <td>Очная</td>
+                    <td>ИВТ</td>
+                    <td>123</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ellis Drew Howells</td>
+                    <td>21228</td>
+                    <td>6202</td>
+                    <td>F</td>
+                    <td>22</td>
+                    <td>Очная</td>
+                    <td>ИВТ</td>
+                    <td>123</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Marie Declan Warner</td>
+                    <td>21338</td>
+                    <td>6203</td>
+                    <td>M</td>
+                    <td>23</td>
+                    <td>Очная</td>
+                    <td>ИВТ</td>
+                    <td>123</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bethany Tia King</td>
+                    <td>21448</td>
+                    <td>6204</td>
+                    <td>M</td>
+                    <td>24</td>
+                    <td>Очная</td>
+                    <td>ИВТ</td>
+                    <td>123</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Hollie Daniyal Bright</td>
+                    <td>21558</td>
+                    <td>6205</td>
+                    <td>F</td>
+                    <td>25</td>
+                    <td>Очная</td>
+                    <td>ИВТ</td>
+                    <td>123</td>
+                </tr>
+            </table>
+
+            <form id="postform" action="process" method="post">
+                <div>
+                    <label for="FIO">ФИО</label>
+                    <input required type="text" name="FIO" id="stud_FIO" placeholder="Иванов Иван Иванович">
+                </div>
+                <div>
+                    <label for="Num">Номер зачётки</label>
+                    <input required type="number" name="Num" id="stud_num" placeholder="0000-00000">
+                </div>
+                <div>
+                    <label for="Grp">Номер группы</label>
+                    <input required type="number" name="Grp" id="stud_grp" value="123" min="1000" max="2000">
+                </div>
+                <div>
+                    <label for="Sex">Пол</label>
+                    <div>
+                        <input required type="radio" name="Sex" id="stud_sex" value="Male" checked>
+                        <label for="Sex">Male</label>
+                    </div>
+                    <div>
+                        <input required type="radio" name="Sex" id="stud_sex" value="Female">
+                        <label for="Sex">Female</label>
+                    </div>
+                </div>
+                <div>
+                    <label for="birthday">Дата рождения</label>
+                    <input required type="date" name="birthday" id="stud_birthday" value="01-01-2000" >
+                </div>
+                <div>
+                    <label for="stud_form">Форма поступления</label>
+                    <div>
+                        <input required type="radio" name="Form" id="stud_form" value="Очная" checked>
+                        <label for="Form">Очная</label>
+                    </div>
+                    <div>
+                        <input required type="radio" name="Form" id="stud_form" value="Очно-заочная">
+                        <label for="Form">Очно-заочная</label>
+                    </div>
+                    <div>
+                        <input required type="radio" name="Form" id="stud_form" value="Заочная">
+                        <label for="Form">Заочная</label>
+                    </div>
+                </div>
+                <div>
+                    <label for="Nap">Направление</label>
+                    <input required type="text" name="Nap" id="stud_nap" placeholder="Напишите направление">
+                </div>
+
+                <input required id="subm" type="submit" value="Добавить">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

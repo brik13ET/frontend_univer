@@ -1,0 +1,94 @@
+#stud_table th
+{
+    padding: 1em;
+    text-align: left;
+    background: rgb(104, 91, 91);
+}
+
+#stud_table tr:nth-child(3n + 0 of tr)
+{
+    background: rgb(255, 201, 201);
+}
+#stud_table tr:nth-child(3n + 1 of tr)
+{
+    background: rgb(201, 255, 201);
+}
+#stud_table tr:nth-child(2)
+{
+    background: rgb(201, 201, 255);
+}
+
+#stud_table td
+{
+    padding: 1em;
+    text-align: center;
+}
+
+#stud_table
+{
+    display: grid;
+    place-items: center;
+}
+
+#stud_table caption
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+
+#postform div
+{
+    display: flex;
+    column-gap: 1em;
+}
+#postform #subm
+{
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#postform input
+{
+    position: relative;
+    flex-grow: 1;
+    right: 0;
+    margin-left: auto;
+}
+#postform
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1em;
+    align-items: start;
+    padding: 1em;
+    word-wrap: break-word;
+    align-items: normal;
+}
+
+body
+{
+    height: 100vh;
+    font: 1em Arial, Helvetica, sans-serif;
+}
+
+#subm
+{
+    padding: 1em;
+}
