@@ -8,7 +8,7 @@
 			"type": "msedge",
 			"request": "launch",
 			"name": "Open index.html",
-			"file": "d:\\Git\\frontend_univer\\lab1\\static\\index.html"
+			"file": "${workspaceFolder}/static/index.html"
 		}
 	]
 }
