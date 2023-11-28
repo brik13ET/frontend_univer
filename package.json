@@ -1,0 +1,19 @@
+{
+  "name": "frontend_univer-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lab2/main.js",
+  "scripts": {
+    "run": "node lab2/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brik13ET/frontend_univer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brik13ET/frontend_univer/issues"
+  },
+  "homepage": "https://github.com/brik13ET/frontend_univer#readme"
+}
