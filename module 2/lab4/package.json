@@ -1,0 +1,12 @@
+{
+  "name": "lab3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "tsc": "tsc --build",
+    "run": "node js/main.js"
+  },
+  "author": "brik13ET",
+  "license": "ISC"
+}
